@@ -9,6 +9,7 @@ import com.example.appfirebase.pages.DeletePage
 import com.example.appfirebase.pages.HomePage
 import com.example.appfirebase.pages.LoginPage
 import com.example.appfirebase.pages.SignupPage
+import com.example.appfirebase.pages.UpdatePage
 
 @Composable
 fun MyAppNavigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel) {
@@ -29,6 +30,10 @@ fun MyAppNavigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel)
         composable("delete"){
             DeletePage(navController = navController, authViewModel = authViewModel)
 
+        }
+
+        composable("update"){
+            UpdatePage(navController = navController, authViewModel = authViewModel)
 
         }
     })
