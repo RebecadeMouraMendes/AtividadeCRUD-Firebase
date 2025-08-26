@@ -5,10 +5,13 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.appfirebase.pages.CadastrarCliente
+import com.example.appfirebase.pages.ConsultarCliente
 import com.example.appfirebase.pages.DeletePage
 import com.example.appfirebase.pages.HomePage
 import com.example.appfirebase.pages.LoginPage
 import com.example.appfirebase.pages.SignupPage
+import com.example.appfirebase.pages.UpdatePage
 
 @Composable
 fun MyAppNavigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel) {
@@ -29,6 +32,20 @@ fun MyAppNavigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel)
         composable("delete"){
             DeletePage(navController = navController, authViewModel = authViewModel)
 
+        }
+
+        composable("update"){
+            UpdatePage(navController = navController, authViewModel = authViewModel)
+
+        }
+
+        composable("cadastrar"){
+            CadastrarCliente(navController = navController)
+
+        }
+
+        composable("consultar"){
+            ConsultarCliente(navController = navController)
 
         }
     })

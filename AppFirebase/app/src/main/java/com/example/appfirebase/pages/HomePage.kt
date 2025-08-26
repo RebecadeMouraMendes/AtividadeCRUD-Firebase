@@ -49,13 +49,35 @@ fun HomePage(modifier: Modifier = Modifier, navController: NavController, authVi
                     Text("Email atual: $userEmail", fontSize = 18.sp)
 
                     Button(
+                        onClick = { navController.navigate("cadastrar") },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text("Cadastrar Cliente")
+                    }
+
+                    Button(
+                        onClick = { navController.navigate("consultar") },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text("Consultar Clientes")
+                    }
+
+
+                    Button(
+                        onClick = { navController.navigate("update") },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text("Editar Senha")
+                    }
+
+                    Button(
                         onClick = { navController.navigate("delete") },
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Text("Deletar Conta")
                     }
 
-                    Button(
+                    TextButton(
                         onClick = { authViewModel.signout() },
                         modifier = Modifier.fillMaxWidth()
                     ) {
@@ -69,6 +91,7 @@ fun HomePage(modifier: Modifier = Modifier, navController: NavController, authVi
                             fontSize = 14.sp
                         )
                     }
+
                 }
             }
         }

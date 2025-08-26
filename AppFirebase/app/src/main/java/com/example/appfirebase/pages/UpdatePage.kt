@@ -18,14 +18,15 @@ import com.example.appfirebase.AuthState
 import com.example.appfirebase.AuthViewModel
 
 @Composable
-fun DeletePage(modifier: Modifier = Modifier, navController: NavController, authViewModel: AuthViewModel) {
+fun UpdatePage(modifier: Modifier = Modifier, navController: NavController, authViewModel: AuthViewModel) {
     val authState by authViewModel.authState.observeAsState()
     val userEmail by authViewModel.userEmail.observeAsState("")
     var currentPassword by remember { mutableStateOf("") }
+    var newPassword by remember { mutableStateOf("") }
 
     LaunchedEffect(authState) {
         if (authState is AuthState.Unauthenticated) {
-            navController.navigate("login") { popUpTo("delete") { inclusive = true } }
+            navController.navigate("login") { popUpTo("update") { inclusive = true } }
         }
     }
 
@@ -46,27 +47,40 @@ fun DeletePage(modifier: Modifier = Modifier, navController: NavController, auth
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Text("Excluir Conta", fontSize = 28.sp, color = Color(0xFFD21656))
+                    Text("Editar Senha", fontSize = 28.sp, color = Color(0xFFD21656))
                     Text("Email atual: $userEmail", fontSize = 18.sp)
+
+                    OutlinedTextField(
+                        value = newPassword,
+                        onValueChange = { newPassword = it },
+                        label = { Text("Senha Nova") },
+                        modifier = Modifier.fillMaxWidth()
+                    )
 
                     OutlinedTextField(
                         value = currentPassword,
                         onValueChange = { currentPassword = it },
-                        label = { Text("Senha atual") },
+                        label = { Text("Confirme com sua senha atual") },
                         modifier = Modifier.fillMaxWidth()
                     )
+
 
                     Button(
                         onClick = {
                             if (currentPassword.isNotEmpty()) {
-                                authViewModel.deleteAccount(currentPassword)
+                                authViewModel.updatePassword(newPassword,currentPassword)
                                 currentPassword = ""
+
+                                if (authState !is AuthState.Error){
+                                    navController.navigate("home")
+                                }
                             }
+
                         },
-                        colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error),
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFB2088B)),
                         modifier = Modifier.fillMaxWidth()
                     ) {
-                        Text("Excluir Conta")
+                        Text("Editar Senha")
                     }
 
                     TextButton(
@@ -76,7 +90,7 @@ fun DeletePage(modifier: Modifier = Modifier, navController: NavController, auth
                         Text("Voltar")
                     }
 
-
+                    
 
                     if (authState is AuthState.Error) {
                         Text(

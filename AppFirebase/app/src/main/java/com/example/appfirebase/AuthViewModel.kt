@@ -61,16 +61,16 @@ class AuthViewModel : ViewModel() {
         _userEmail.value = ""
     }
 
-    fun updateEmail(newEmail: String, currentPassword: String) {
+    fun updatePassword(newPassword: String, currentPassword: String) {
         val user = auth.currentUser ?: return
         val credential = EmailAuthProvider.getCredential(user.email!!, currentPassword)
 
         user.reauthenticate(credential).addOnCompleteListener { reauthTask ->
             if (reauthTask.isSuccessful) {
-                user.updateEmail(newEmail).addOnCompleteListener { updateTask ->
-                    if (updateTask.isSuccessful) refreshUser()
+                user.updatePassword(newPassword).addOnCompleteListener { updateTask ->
+                    if (updateTask.isSuccessful) refreshUser();
                     else _authState.value =
-                        AuthState.Error(updateTask.exception?.message ?: "Erro ao atualizar email")
+                        AuthState.Error(updateTask.exception?.message ?: "Erro ao atualizar a senha")
                 }
             } else {
                 _authState.value =
