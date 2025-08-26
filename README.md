@@ -12,10 +12,14 @@
 
 ![WhatsApp Image 2025-08-26 at 18 35 58](https://github.com/user-attachments/assets/d499bf38-e16b-4d9e-a82c-077ea2d80529)
 
-<img width="1575" height="850" alt="Captura de tela de 2025-08-26 18-29-56" src="https://github.com/user-attachments/assets/4e53c5e4-71fa-41d6-a0bf-10eff6255636" />
-
-
 ![WhatsApp Image 2025-08-26 at 18 35 58(1)](https://github.com/user-attachments/assets/61ea571d-a9d8-4b4f-95df-4e240f640bf2)
+
+</p>
+Login no Authentication
+</p>
+<img width="1575" height="850" alt="Captura de tela de 2025-08-26 18-29-56" src="https://github.com/user-attachments/assets/4e53c5e4-71fa-41d6-a0bf-10eff6255636" />
+</p>
+
 
 ![WhatsApp Image 2025-08-26 at 18 35 58(2)](https://github.com/user-attachments/assets/74714445-d68f-492d-a31c-6558e9b85be8)
 
@@ -23,9 +27,14 @@
 
 ![WhatsApp Image 2025-08-26 at 18 35 58(4)](https://github.com/user-attachments/assets/15d9c9cf-bcf9-457c-ae91-8a155f61cb73)
 
+
+</p>
+Banco de dados dos clientes no Firestore
+</p>
 <img width="1575" height="712" alt="Captura de tela de 2025-08-26 18-29-08" src="https://github.com/user-attachments/assets/8c7b680b-0969-43cc-ad30-7e2a4003766b" />
 
 <img width="1575" height="712" alt="Captura de tela de 2025-08-26 18-29-13" src="https://github.com/user-attachments/assets/f4b2f594-1710-43ca-9730-a5ccbb82838a" />
+</p>
 
 ![WhatsApp Image 2025-08-26 at 18 35 58(5)](https://github.com/user-attachments/assets/0b2f392a-1db1-4c9e-a98a-613174260c01)
 
