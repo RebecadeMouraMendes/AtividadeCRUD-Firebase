@@ -6,47 +6,34 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Tutorial da atividade
+## Aplicativo Cadastro de Clientes com Firebase
 
-- Acesse o xampp/php/php.ini e pesquise por ;extension=ftp/ffi/zip, depois retire o “;”.
-- Crie uma pasta no xampp/htdocs.
-</p>
-Faça a instalação do Laravel com os seguintes comandos:
-</p>
-<img width="1350" height="287" alt="Captura de tela de 2025-08-09 12-41-13" src="https://github.com/user-attachments/assets/8b90224f-02d4-4a99-8636-2e4301bf203e" />
-</p>
-<img width="559" height="287" alt="Captura de tela de 2025-08-09 12-41-21" src="https://github.com/user-attachments/assets/1e3a7aca-10f1-47c0-87ba-c9f7490f1671" />
-</p>
+![WhatsApp Image 2025-08-26 at 18 35 57](https://github.com/user-attachments/assets/e915890c-2c50-445c-95ab-5f7b89fc655b)
 
-<img width="720" height="347" alt="Captura de tela de 2025-08-09 12-42-03" src="https://github.com/user-attachments/assets/f94775ba-a8ef-4781-b8f5-27ecd59f32c2" />
-</p>
-<img width="720" height="93" alt="Captura de tela de 2025-08-09 12-42-21" src="https://github.com/user-attachments/assets/ffdca1e9-07aa-42d6-b6d4-ff6e2f9ad82a" />
-</p>
-</p>
-E por fim, vamos realizar as etapas de migrações:
-Esse comando de migrações, publica suas modificações no banco escolhido (nesse caso MySql). Ele localiza o banco declarado no .env e suas configurações.
-</p>
-Gere uma tabela  chamada "user_alunos":
-</p>
-<img width="773" height="84" alt="Captura de tela de 2025-08-09 12-42-54" src="https://github.com/user-attachments/assets/44cd7246-4796-4c36-932d-df55a95fdd3d" />
-</p>
-Podemos notar a criação da tabela user_alunos na pasta sistema/database/migrations:
-</p>
-<img width="347" height="274" alt="Captura de tela de 2025-08-09 12-43-18" src="https://github.com/user-attachments/assets/cfe29cb9-9d42-4bfc-9ead-b75afed8a289" />
-</p>
-Nesse arquivo precisamos indicar os campos da tabela e seus tipos de dado:
-</p>
-<img width="785" height="600" alt="Captura de tela de 2025-08-09 12-44-45" src="https://github.com/user-attachments/assets/1af7b9ae-ad90-4536-be30-3e3ece3ccc3b" />
-</p>
-Para publicar as alterações devemos rodar esse comando novamente:
-</p>
-<img width="1276" height="128" alt="Captura de tela de 2025-08-09 12-46-33" src="https://github.com/user-attachments/assets/ddd01a75-1d4e-4ff2-bcdb-404cce123c90" />
-</p>
-A tabela foi criada no phpMyAdmin com os campos que denominamos:
-</p>
-</p>
-<img width="481" height="265" alt="Captura de tela de 2025-08-09 12-47-05" src="https://github.com/user-attachments/assets/31c2c0cb-e970-4e9e-b4ed-54352471f0e3" />
-</p>
-</p>
+![WhatsApp Image 2025-08-26 at 18 35 58](https://github.com/user-attachments/assets/d499bf38-e16b-4d9e-a82c-077ea2d80529)
+
+<img width="1575" height="850" alt="Captura de tela de 2025-08-26 18-29-56" src="https://github.com/user-attachments/assets/4e53c5e4-71fa-41d6-a0bf-10eff6255636" />
+
+
+![WhatsApp Image 2025-08-26 at 18 35 58(1)](https://github.com/user-attachments/assets/61ea571d-a9d8-4b4f-95df-4e240f640bf2)
+
+![WhatsApp Image 2025-08-26 at 18 35 58(2)](https://github.com/user-attachments/assets/74714445-d68f-492d-a31c-6558e9b85be8)
+
+![WhatsApp Image 2025-08-26 at 18 35 58(3)](https://github.com/user-attachments/assets/27305696-1c0f-4541-8891-f09c075b29ff)
+
+![WhatsApp Image 2025-08-26 at 18 35 58(4)](https://github.com/user-attachments/assets/15d9c9cf-bcf9-457c-ae91-8a155f61cb73)
+
+<img width="1575" height="712" alt="Captura de tela de 2025-08-26 18-29-08" src="https://github.com/user-attachments/assets/8c7b680b-0969-43cc-ad30-7e2a4003766b" />
+
+<img width="1575" height="712" alt="Captura de tela de 2025-08-26 18-29-13" src="https://github.com/user-attachments/assets/f4b2f594-1710-43ca-9730-a5ccbb82838a" />
+
+![WhatsApp Image 2025-08-26 at 18 35 58(5)](https://github.com/user-attachments/assets/0b2f392a-1db1-4c9e-a98a-613174260c01)
+
+
+![WhatsApp Image 2025-08-26 at 18 35 59(1)](https://github.com/user-attachments/assets/5fbe3299-ec68-4e1b-8f1d-b58232335afb)
+
+![WhatsApp Image 2025-08-26 at 18 41 54](https://github.com/user-attachments/assets/a034ac32-9146-4da2-9a4a-7abb3dc7e7df)
+
+<img width="1586" height="850" alt="Captura de tela de 2025-08-26 18-30-30" src="https://github.com/user-attachments/assets/5ff4ab62-b1ea-4400-aa23-c2d735543dea" />
 
 ## Etec Zona Leste - Rebeca de Moura Mendes
