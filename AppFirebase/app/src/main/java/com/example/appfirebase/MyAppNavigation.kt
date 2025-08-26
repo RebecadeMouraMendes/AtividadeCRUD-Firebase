@@ -36,6 +36,7 @@ fun MyAppNavigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel)
 
         composable("update"){
             UpdatePage(navController = navController, authViewModel = authViewModel)
+<<<<<<< HEAD
 
         }
 
@@ -46,6 +47,8 @@ fun MyAppNavigation(modifier: Modifier = Modifier, authViewModel: AuthViewModel)
 
         composable("consultar"){
             ConsultarCliente(navController = navController)
+=======
+>>>>>>> b100530e6dc5786d91662f6b485e3c9041a2a941
 
         }
     })

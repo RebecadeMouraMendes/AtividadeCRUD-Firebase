@@ -49,6 +49,7 @@ fun HomePage(modifier: Modifier = Modifier, navController: NavController, authVi
                     Text("Email atual: $userEmail", fontSize = 18.sp)
 
                     Button(
+<<<<<<< HEAD
                         onClick = { navController.navigate("cadastrar") },
                         modifier = Modifier.fillMaxWidth()
                     ) {
@@ -64,6 +65,8 @@ fun HomePage(modifier: Modifier = Modifier, navController: NavController, authVi
 
 
                     Button(
+=======
+>>>>>>> b100530e6dc5786d91662f6b485e3c9041a2a941
                         onClick = { navController.navigate("update") },
                         modifier = Modifier.fillMaxWidth()
                     ) {
